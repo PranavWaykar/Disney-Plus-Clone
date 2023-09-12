@@ -1,0 +1,153 @@
+nav{
+    height: 80px;
+    background: #090b13;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo{
+    width: 80px;
+    max-width: 80px;
+    height: 80px;
+}
+
+.navMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    width: 100%;
+}
+
+.links > img{
+    width: 20px;
+}
+
+.links > span{
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    position: relative;
+}
+
+span::before{
+    content: "";
+    height: 2px;
+    width: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    background-color: #f9f9f9;
+    transition: 300ms ease-in-out;
+    transform: scale(0);
+    transform-origin: left;
+}
+
+.links:hover span::before{
+    transform: scaleX(1);
+}
+
+.links:hover >img{
+    filter: invert(29%) sepia(100%) saturate(464%) hue-rotate(359deg) brightness(103%) contrast(106%);
+}
+
+.loginBtn{
+    padding: 0.5rem 1rem;
+    border: 1px solid #f9f9f9;
+    color: #f9f9f9;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 4px;
+    letter-spacing: 1.5px;
+    background-color: rgba(0,0,0,0.8);
+    transition: 300ms ease-in-out;
+}
+
+.loginBtn:hover{
+    background: #f9f9f9;
+    color: black;
+}
+
+.userImage{
+    width: 50px;
+    border-radius: 50%;
+    transition: 300ms ease-in-out;
+    position: relative;
+    cursor: pointer;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    width: 100px;
+    height: 100%;
+    
+}
+
+.profile:hover .userImage{
+    transform: scale(1.1);
+    
+}
+
+.profile:hover .signOutBtn{
+    visibility: visible;
+    opacity: 1;
+}
+
+.signOutBtn{
+    position: absolute;
+    top: 74px;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #f9f9f9;
+    color: #f9f9f9;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 4px;
+    letter-spacing: 1.5px;
+    background-color: rgba(0,0,0,0.8);
+    transition: 300ms ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.signOutBtn:hover{
+    background: #f9f9f9;
+    color: black;
+}
+
+@media (max-width:500px){
+    .userImage{
+        width: 40px;
+    }
+    .signOutBtn{
+        top: 64px;
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width:780px){
+    .navMenu{
+        display: none;
+    }
+}
