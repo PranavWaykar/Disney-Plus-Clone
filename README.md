@@ -15,27 +15,6 @@ Disney-Plus-Clone is a React-based clone of the popular streaming service Disney
 * **Seamless navigation:** React Router provides seamless navigation with private routes, so users can only access the pages that they are authorized to view.
 * **Interactive features:** Disney-Plus-Clone includes interactive features such as playing sample video clips on hover, adding movies and TV shows to a watchlist, and leaving reviews.
 
-### Installation
-
-To install Disney-Plus-Clone, simply run the following command in your terminal:
-npm install
-
-### Usage
-To run Disney-Plus-Clone, simply run the following command in your terminal:
-npm start
-
-This will start the development server and open the application in your web browser.
-
-### Known Issues
-There are no known issues with Disney-Plus-Clone at this time.
-
-### Contribution
-We are always open to contributions to Disney-Plus-Clone. If you would like to contribute, please submit a pull request.
-
-### License
-  
-The project is licensed under the MIT License <img width="15" src="https://cdn.icon-icons.com/icons2/2649/PNG/512/mit_license_icon_160873.png">
-
 ## Demo Clip
 
 
